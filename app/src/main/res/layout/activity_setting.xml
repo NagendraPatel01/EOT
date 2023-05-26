@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+  >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:id="@+id/a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_label_language"
+                style="@style/style_sec_sec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_language" />
+
+
+            <TextView
+                android:id="@+id/title_language"
+                style="@style/header_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/english" />
+
+
+            <com.eot_app.utility.util_interfaces.NoDefaultSpinner
+                android:id="@+id/language_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/text_page"
+                android:background="@android:color/transparent"
+                android:popupBackground="@drawable/popupbg"
+                android:visibility="invisible"
+                tools:ignore="ObsoleteLayoutParam" />
+
+
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/a"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/border_font_color"
+            tools:ignore="ObsoleteLayoutParam" />
+
+
+        <LinearLayout
+            android:id="@+id/b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical"
+            tools:ignore="ObsoleteLayoutParam">
+
+
+            <TextView
+                android:id="@+id/tv_label_view"
+                style="@style/style_sec_sec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/default_page_view" />
+
+
+            <TextView
+                android:id="@+id/text_page"
+                style="@style/header_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/calendar" />
+
+
+            <com.eot_app.utility.util_interfaces.NoDefaultSpinner
+                android:id="@+id/page_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/text_page"
+                android:background="@android:color/transparent"
+                android:popupBackground="@drawable/popupbg"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/a"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/border_font_color"
+            tools:ignore="ObsoleteLayoutParam" />
+
+
+
+        <LinearLayout
+
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal"
+            tools:ignore="ObsoleteLayoutParam">
+
+
+            <TextView
+                android:id="@+id/site_name_show_txt"
+                style="@style/style_sec_sec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                tools:ignore="InefficientWeight" />
+
+            <Switch
+                android:id="@+id/site_name_show_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:switchMinWidth="56dp"
+                />
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/a"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/border_font_color"
+            tools:ignore="ObsoleteLayoutParam" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_report_bug"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            tools:ignore="ObsoleteLayoutParam">
+
+
+            <TextView
+                android:id="@+id/tv_report_msg"
+                style="@style/style_sec_sec"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:text="@string/if_you_encounter_a_bug_or_issue_please_report_here" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_report"
+                style="@style/style_sec"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_below="@+id/view1"
+                android:layout_gravity="center|top"
+                android:background="@drawable/submit_btn"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/report"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                tools:ignore="ObsoleteLayoutParam" />
+
+
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/report_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/b"
+            android:visibility="gone"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/border_font_color"
+            tools:ignore="ObsoleteLayoutParam" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+</layout>

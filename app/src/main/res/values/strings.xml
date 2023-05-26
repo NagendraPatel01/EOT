@@ -1,0 +1,338 @@
+<resources>
+    <integer name="mobile_no_length">15</integer>
+    <integer name="social_acc_length">25</integer>
+    <string name="app_name">EyeOnTask</string>
+
+    <string name="login_headr">EyeOnTask</string>
+    <string name="app_fw_hdr">Field Service App</string>
+
+    //privacy police
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+
+    //login
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="privacy_policy">Copyright &#169; Eyeontask 2023 <a href="https://www.eyeontask.com/policy.html"> Privacy Policy</a></string>
+    <string name="login_email">User Name</string>
+    <string name="pass_word">Password</string>
+    <string name="rember">Remember me</string>
+    <string name="login">Login</string>
+    <string name="next">Next</string>
+
+    //forget password
+    <string name="use_account">Use another account</string>
+    <string name="Passwordresetkey">Password reset key</string>
+    <string name="forgetpassword">Forgot Password ?</string>
+    <string name="already_key">Already have key</string>
+    <string name="back_to_login">Back to login</string>
+    <string name="dontkey">Don\'t have key</string>
+
+
+    <string name="pass_recov">Password Recovery</string>
+
+
+    <string name="pass_head_desc">Please provide us your username and we will send you a link on your associated email address where you can choose a new password.</string>
+    <string name="Username">Username</string>
+    <string name="date_form">DD-MM-YY</string>
+
+
+    //titles
+    <string name="city">City</string>
+    <string name="postal">Postal Code</string>
+    <string name="title_activity_client_detail">Overview</string>
+    <string name="title_activity_addclient">Add Client</string>
+    <string name="title_editoverview">Edit Client</string>
+
+
+    <string name="title_edit_contact">Edit Contact</string>
+    <string name="external_dir">GetSignature</string>
+
+
+    //mandotry fileds
+    <string name="mob_no">Mobile Number *</string>
+    <string name="job_email">Email ID *</string>
+    <string name="add">Address *</string>
+
+
+    //drawer main menu item
+    <string name="submit">Submit</string>
+
+
+    //list item empty messages
+
+
+    <string name="save_for_futur">Save for future use</string>
+
+
+    //task status
+    <string name="onhold">On Hold</string>
+    <string name="complete">Completed</string>
+
+
+    //job buttom navigation tab
+
+    //client buttom navigation tab
+    <string name="tlt_clt_ov">Overview</string>
+    <string name="tlt_clt_contact">Contacts</string>
+    <string name="tlt_clt_site">Projects/Sites</string>
+
+    //job details
+
+
+    //feedback
+    <!--<string name="feed_head">Send us your feedback</string>-->
+    <!--<string name="feed_sub_head">How would you evaluate the quality of work performed?</string>-->
+    <!--<string name="sign">Signature</string>-->
+
+    //Filter task
+
+    <string name="forgot_password_title">Forgot Password</string>
+
+
+    //documents
+
+    //custom form
+
+    //invoice
+    <string name="invoice_add_new_item">Add New Item</string>
+    <string name="pay_full_amount">Pay Full Amount</string>
+    <string name="pay_partial_amount">Pay Partial Amount</string>
+    <string name="pay_now">Pay Now</string>
+
+    <!--<string name="empty_invoice">Could not find invoice for this job</string>-->
+
+    <string name="friday">F</string>
+    <string name="monday">M</string>
+    <string name="saturday">S</string>
+    <string name="sunday">S</string>
+    <string name="thursday">T</string>
+    <string name="tuesday">T</string>
+    <string name="wednesday">W</string>
+
+    <string name="crate_account">Create Your Account !</string>
+    <string name="crate_account_txt">Your email will become your login for EyeOnTask</string>
+    <string name="crate_account_com_name">Company name or your name</string>
+    <string name="crate_account_email">Business Email</string>
+    <string name="crate_account_pass">Password</string>
+    <string name="crate_account_server">Chooese your Server Location</string>
+
+    <string name="welcome_eot">Welcome to EyeOnTask.com</string>
+    <string name="welcome_eot_txt">Complete your account details</string>
+    <string name="welcome_verify_code">Enter Verification Code</string>
+
+    <string name="almost_done">Almost Done!</string>
+    <string name="select_country">Select Country</string>
+    <string name="select_state">Select State</string>
+    <string name="select_currency">Select Currency</string>
+    <string name="select_currency_format">Select Currency Format</string>
+    <string name="select_time_zone">Select Time Zone</string>
+    <string name="language">Language</string>
+    <string name="registerr">Click Here To Register</string>
+
+
+    //Dialog
+
+    <string name="ok">OK</string>
+    <string name="dialog_alert">Alert !</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    // app values
+    <string name="save">Save</string>
+    <string name="start_date_and_time">Start date and time</string>
+    <string name="hh_mm">hh:mm</string>
+    <string name="end_date_and_time">End date and time</string>
+    <string name="contract">Contract</string>
+    <string name="client_name">Client Name *</string>
+    <string name="account_type">Account Type</string>
+    <string name="contact_name">Contact Name</string>
+    <string name="gst_no">GST No</string>
+    <string name="tin_no">TIN No</string>
+    <string name="industry">Industry</string>
+    <string name="site_name">Site Name</string>
+    <string name="upload">Upload</string>
+    <string name="click_here_for_upload_reciepts">Click here for upload reciepts</string>
+    <string name="expense_name">Expense name</string>
+    <string name="date">Date</string>
+    <string name="amount">Amount</string>
+    <string name="description">Description</string>
+    <string name="group">Group</string>
+    <string name="link_to">Link to</string>
+    <string name="none">None</string>
+    <string name="job">Job</string>
+    <string name="client">Client</string>
+    <string name="claim">Claim</string>
+    <string name="add_expense">Add expense</string>
+    <string name="do_you_want_repeat_this_job">Do you want repeat this job ?</string>
+    <string name="don_t_work_for_you_create">Don\'t work for you ? create</string>
+    <string name="cusom_recur_pattern">Cusom recur pattern</string>
+    <string name="equipment_as_a_part">Equipment as a part</string>
+    <string name="type">Type</string>
+    <string name="owner">Owner</string>
+    <string name="service_provider">Service Provider</string>
+    <string name="auto_generate_barcode">Auto Generate BarCode</string>
+    <string name="scan_insert_barcode">Scan/Insert BarCode</string>
+    <string name="insert_barcode">Insert Barcode</string>
+    <string name="scan">Scan</string>
+    <string name="attachment">Attachment</string>
+    <string name="before">Before</string>
+    <string name="your_document_here">Your document here</string>
+    <string name="status">Status</string>
+    <string name="site_name_star">Site Name *</string>
+    <string name="contact">Contact</string>
+    <string name="create_new_contact">create New Contact</string>
+    <string name="contact_name_star">Contact Name *</string>
+    <string name="email_star">Email *</string>
+    <string name="alternate_no">Alternate No.</string>
+    <string name="fax">Fax</string>
+    <string name="skype">Skype</string>
+    <string name="twitter">Twitter</string>
+    <string name="mark_as_done">Mark as done</string>
+    <string name="completed">Completed</string>
+    <string name="view_on_map">View on Map</string>
+    <string name="appointment_description">Appointment Description</string>
+    <string name="quotation">Quotation</string>
+    <string name="recent_quotation">Recent Quotation :</string>
+    <string name="recent_job">Recent Job :</string>
+    <string name="add_new">Add New</string>
+    <string name="select_all">Select All</string>
+    <string name="export_document">Export Document</string>
+    <string name="_1234">#1234</string>
+    <string name="register_now">Register Now !</string>
+    <string name="customize">Customize</string>
+    <string name="item_name">Item name</string>
+    <string name="service">Service</string>
+    <string name="billable">Billable</string>
+    <string name="non_billable">Non Billable</string>
+
+    <string name="default_contact">Default Contact</string>
+    <string name="equipment_audit">Equipment Audit</string>
+    <string name="equipment_s_service">Equipment\'s Service</string>
+    <string name="go_to_job">Go to Job</string>
+    <string name="go_to_audit">Go to Audit</string>
+    <string name="add_job">Add Job</string>
+    <string name="job_code">Job Code:</string>
+    <string name="to_start_date">To Start Date</string>
+    <string name="from_end_date">From End Date</string>
+    <string name="pay">Pay</string>
+    <string name="taxation_based_on_location">Taxation based on Location</string>
+    <string name="select">Select</string>
+    <string name="remove">Remove</string>
+    <string name="select_invoice_template">Select Invoice Template</string>
+    <string name="save_as_pdf">Save as Pdf</string>
+    <string name="cancel">Cancel</string>
+    <string name="completion_notes">Completion Notes</string>
+
+    <string name="extra_filed">Extra Filed</string>
+    <string name="reschedule">Reschedule</string>
+    <string name="text">text</string>
+    <string name="active">Active</string>
+    <string name="inactive">Inactive</string>
+    <string name="notes">Notes</string>
+    <string name="update">Update</string>
+    <string name="payment">Payment</string>
+    <string name="app_language">App Language</string>
+    <string name="english">English</string>
+    <string name="default_page_view">Default page view</string>
+    <string name="calendar">Calendar</string>
+    <string name="if_you_encounter_a_bug_or_issue_please_report_here">If you encounter a bug or issue, Please report here.</string>
+    <string name="report">Report</string>
+    <string name="verify">Verify</string>
+    <string name="resend">Resend</string>
+
+    <string name="price">Price</string>
+    <string name="qty">Qty</string>
+    <string name="textview">TextView</string>
+    <string name="search">Search...</string>
+    <string name="receiver">Receiver</string>
+    <string name="sender">sender</string>
+    <string name="all_types_file_open">All types File open</string>
+    <string name="item">Item</string>
+    <string name="start_new_chat_here">Start new chat here</string>
+    <string name="_1_8_agra_bombay_rd_old_palasia_indore_madhya_pradesh_452001">1-8, Agra Bombay Rd, Old Palasia, Indore, Madhya Pradesh 452001</string>
+    <string name="range_of_recurrence">Range of Recurrence</string>
+    <string name="starting_on">Starting on</string>
+    <string name="no_end_date">No end date</string>
+    <string name="end_after">End after</string>
+    <string name="occurrences">occurrences</string>
+    <string name="end_by">End by</string>
+    <string name="signature">Signature</string>
+    <string name="clear">clear</string>
+    <string name="every">Every</string>
+    <string name="view_and_send">View and Send</string>
+    <string name="view">View</string>
+    <string name="send_email">Send Email</string>
+    <string name="do_you_want_to_upload_this_file">Do you want to upload this file?</string>
+
+    <string name="add_notes">Add Notes</string>
+    <string name="reason">Reason</string>
+    <string name="download_time_sheet">Download Time Sheet</string>
+    <string name="work_faster_with_tools_like_compatibility_toggles_adb_incremental_installs_and_more_plus_the_code_changes_that_might_ve_affected_your_app_download_the_latest_version">Work faster with tools like compatibility toggles, ADB incremental installs, and more! Plus the code changes that might\'ve affected your app. Download the latest version.</string>
+    <string name="dynamic_question_add">Dynamic Question add</string>
+    <string name="customer_portal_login_with_your_username_and_password_directly_from_here">Customer portal (Login with your username and password directly from here)</string>
+    <string name="add_attachment">Add Attachment</string>
+    <string name="days">Days</string>
+    <string name="month">Month</string>
+    <string name="year">"Year</string>
+    <string name="email_job_card">Email Job Card</string>
+    <string name="job_card">Job Card</string>
+    <string name="print_job_card">Print Job card</string>
+    <string name="_00_00_hours">00:00 Hours</string>
+    <string name="you_can_select_date_rate_and_download_your_time_sheet">You can select date rate and download Your Time Sheet.</string>
+    <string name="download_report">Download Report</string>
+    <string name="job_remark_filter_list">Job Remark Filter List</string>
+    <string name="in_progress">In progress</string>
+    <string name="remaining_amount">Remaining Amount</string>
+    <string name="_0_00">0.00</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="paid">Paid</string>
+    <string name="due_date">Due date</string>
+    <string name="invoice_date">Invoice Date</string>
+    <string name="po_number">PO Number</string>
+    <string name="crop">Crop</string>
+    <string name="add_file_name">Add file name...</string>
+    <string name="technitian_signature">Technitian Signature</string>
+    <string name="select_end_date">Select End Date</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    //sysnc msgs
+
+    //forgot password
+
+
+    //Base Url
+
+
+    //custom form
+    <!--<string name="ans_hint">Add Your Answer</string>-->
+
+    //Invoice
+    <!--<string name="invoice_Name">John Doe</string>-->
+
+    //invoice item
+
+
+    // location dialog checker
+
+
+    //job task dropdown
+    <!--<string name="new_task">New</string>-->
+    <!--<string name="accept_task">Accepted</string>-->
+
+
+    //task prioty
+
+    //invoice dropdown
+
+    //camera permissions
+
+    //galary permissions
+
+
+    <!--titles-->
+
+    <!--detail menu item meta data-->
+
+    //add job
+
+</resources>

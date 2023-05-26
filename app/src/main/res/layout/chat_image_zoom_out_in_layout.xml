@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/expanded_image_bg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="#70000000"
+    android:gravity="center"
+    android:padding="5dp"
+    android:visibility="invisible">
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:layout_marginBottom="20dp"-->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/chat_im_zoom"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_cancel"
+            android:tint="@color/colorPrimary"
+            tools:ignore="ContentDescription" />
+
+        <com.eot_app.utility.TouchImageView
+            android:id="@+id/expanded_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/chat_im_zoom"
+            android:layout_marginTop="5dp"
+            android:contentDescription="zoom"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</LinearLayout>
+
+
+

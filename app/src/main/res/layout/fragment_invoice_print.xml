@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/scrollView"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <com.eot_app.utility.ZoomLayout
+            android:id="@+id/zoomLayout"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/linearUserDetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtName"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="8sp"
+                            tools:ignore="HardcodedText,SmallSp"
+                            android:text="Name"
+                            android:visibility="gone"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/txtAddress"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="Address"
+                            android:visibility="gone"
+                            android:textColor="@color/black"
+                            android:textSize="8sp"
+                            tools:ignore="HardcodedText,SmallSp"/>
+
+                        <TextView
+                            android:id="@+id/txtCity"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="City"
+                            android:visibility="gone"
+                            android:textColor="@color/black"
+                            android:textSize="8sp"
+                            tools:ignore="HardcodedText,SmallSp"/>
+
+                        <TextView
+                            android:id="@+id/txtCountry"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="Country"
+                            android:visibility="gone"
+                            android:textColor="@color/black"
+                            android:textSize="8sp"
+                            tools:ignore="HardcodedText,SmallSp"/>
+
+
+                        <TextView
+                            android:id="@+id/txtEmailId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Email Id"
+                            android:visibility="gone"
+                            android:textColor="@color/black"
+                            android:textSize="8sp"
+                            tools:ignore="HardcodedText,SmallSp"/>
+
+
+                        <TextView
+                            android:id="@+id/txtInvoiceBillTo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Invoice Bill To"
+                            android:textColor="@color/black"
+                            android:textSize="8sp"
+                            tools:ignore="HardcodedText,SmallSp" />
+
+                        <TextView
+                            android:id="@+id/txtBillToName"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="8sp"
+                            tools:ignore="HardcodedText,SmallSp"
+                            android:text="Name"
+                            android:visibility="gone"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtBillToAddress"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="Address"
+                            android:textColor="@color/black"
+                            android:visibility="gone"
+                            android:textSize="8sp"
+                            tools:ignore="HardcodedText,SmallSp" />
+                        <TextView
+                            android:id="@+id/txtBillToCountry"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="dfdsfds"
+                            android:textColor="@color/black"
+                            android:visibility="gone"
+                            android:textSize="8sp"
+                            tools:ignore="HardcodedText,SmallSp"/>
+
+                        <TextView
+                            android:id="@+id/txtBillToPhone"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="Phone"
+                            android:textColor="@color/black"
+                            android:visibility="gone"
+                            android:textSize="8sp"
+                            tools:ignore="HardcodedText,SmallSp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearInvoiceDetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imagePersonIcon"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="end"
+                            android:src="@drawable/ic_launcher"
+                            tools:ignore="ContentDescription" />
+
+                        <TableLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TableRow android:layout_marginTop="4dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start"
+                                    android:text="Invoice Code"
+                                    android:textColor="@color/black"
+                                    android:textSize="8sp"
+                                    tools:ignore="HardcodedText,SmallSp,TooDeepLayout"/>
+
+                                <TextView
+                                    android:id="@+id/txtInvoiceCode"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="12dp"
+                                    android:gravity="end"
+                                    android:textColor="@color/black"
+                                    android:textSize="8sp"
+                                    tools:ignore="SmallSp"/>
+                                <!--android:text="Jit-00023"-->
+                            </TableRow>
+
+                            <TableRow android:layout_marginTop="4dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start"
+                                    android:text="@string/po_number"
+                                    android:textColor="@color/black"
+                                    android:textSize="8sp"
+                                    tools:ignore="SmallSp"/>
+
+                                <TextView
+                                    android:id="@+id/txtPoNumber"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="12dp"
+                                    android:gravity="end"
+                                    android:textColor="@color/black"
+                                    android:textSize="8sp"
+                                    tools:ignore="SmallSp" />
+                            </TableRow>
+
+                            <TableRow android:layout_marginTop="4dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start"
+                                    android:textColor="@color/black"
+                                    android:text="@string/invoice_date"
+                                    android:textSize="8sp"
+                                    tools:ignore="SmallSp" />
+
+                                <TextView
+                                    android:id="@+id/txtInvoiceDate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="12dp"
+                                    android:gravity="end"
+                                    android:textColor="@color/black"
+                                    android:textSize="8sp"
+                                    tools:ignore="SmallSp"/>
+                                <!-- android:text="10-Apr-2019"-->
+                            </TableRow>
+
+                            <TableRow android:layout_marginTop="4dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start"
+                                    android:text="@string/due_date"
+                                    android:textColor="@color/black"
+                                    android:textSize="8sp"
+                                    tools:ignore="SmallSp"/>
+
+                                <TextView
+                                    android:id="@+id/txtDueDate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="12dp"
+                                    android:gravity="end"
+                                    android:textColor="@color/black"
+                                    android:textSize="8sp"
+                                    tools:ignore="SmallSp" />
+                                <!-- android:text="10-Apr-2019"-->
+                            </TableRow>
+                        </TableLayout>
+                    </LinearLayout>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="2dp"
+                    android:orientation="horizontal"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:weightSum="19">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:textColor="@color/black"
+                        android:text="#"
+                        android:textSize="6sp"
+                        tools:ignore="HardcodedText,SmallSp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="start"
+                        android:textColor="@color/black"
+                        android:text="Item (s) / Fieldworker (s)"
+                        android:textSize="6sp"
+                        tools:ignore="HardcodedText,SmallSp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="start"
+                        android:textColor="@color/black"
+                        android:text="Description"
+                        android:textSize="6sp"
+                        tools:ignore="HardcodedText,SmallSp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textColor="@color/black"
+                        android:gravity="end"
+                        android:text="Qty / Hr"
+                        android:textSize="6sp"
+                        tools:ignore="HardcodedText,SmallSp" />
+
+                    <TextView
+                        android:id="@+id/txtRateLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="end"
+                        android:textColor="@color/black"
+                        android:text="Rate"
+                        android:textSize="6sp"
+                        tools:ignore="HardcodedText,SmallSp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="end"
+                        android:textColor="@color/black"
+                        android:text="Discount (%)"
+                        android:textSize="6sp"
+                        tools:ignore="HardcodedText,SmallSp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="end"
+                        android:textColor="@color/black"
+                        android:text="Tax (%)"
+                        android:textSize="6sp"
+                        tools:ignore="HardcodedText,SmallSp" />
+
+                    <TextView
+                        android:id="@+id/txtAmountLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="end"
+                        android:textColor="@color/black"
+                        android:text="Amount"
+                        android:textSize="6sp"
+                        tools:ignore="HardcodedText,SmallSp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height=".2dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@color/colorPrimary" />
+                <LinearLayout
+                    android:id="@+id/linearInvoice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:orientation="vertical">
+                </LinearLayout>
+
+                <TableLayout
+                    android:id="@+id/tableLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/white"
+                    android:layout_marginEnd="8dp">
+
+                    <TableRow android:layout_marginTop="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:text="Invoice Total"
+                            android:textColor="@color/black"
+                            android:textSize="8sp"
+                            tools:ignore="HardcodedText,SmallSp"/>
+
+                        <TextView
+                            android:id="@+id/txtInvoiceTotal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginStart="12dp"
+                            android:textColor="@color/black"
+                            android:text="0.00"
+                            android:textSize="8sp"
+                            tools:ignore="HardcodedText,SmallSp"/>
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:text="Additional Discount"
+                            android:textColor="@color/black"
+                            android:textSize="8sp"
+                            tools:ignore="HardcodedText,SmallSp" />
+
+                        <TextView
+                            android:id="@+id/txtAdditionalDiscount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_gravity="end"
+                            android:textColor="@color/black"
+                            android:text="0.00"
+                            android:textSize="8sp"
+                            tools:ignore="HardcodedText,SmallSp" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:text="@string/total_amount"
+                            android:textColor="@color/black"
+                            android:textSize="8sp"
+                            tools:ignore="SmallSp" />
+
+                        <TextView
+                            android:id="@+id/txtTotalAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:text="0.00"
+                            android:textColor="@color/black"
+                            android:layout_gravity="end"
+                            android:textSize="8sp"
+                            tools:ignore="HardcodedText,SmallSp" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:text="@string/paid"
+                            android:textColor="@color/black"
+                            android:textSize="8sp"
+                            tools:ignore="SmallSp" />
+
+                        <TextView
+                            android:id="@+id/txtPaid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:text="@string/_0_00"
+                            android:textColor="@color/black"
+                            android:layout_gravity="end"
+                            android:textSize="8sp"
+                            tools:ignore="SmallSp" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_marginTop="4dp">
+                        <View android:layout_width="match_parent"
+                            android:layout_height=".2dp"
+                            android:background="@color/colorPrimary"
+                            android:layout_weight="1"/>
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:text="@string/remaining_amount"
+                            android:textColor="@color/black"
+                            android:textSize="8sp"
+                            tools:ignore="SmallSp" />
+
+                        <TextView
+                            android:id="@+id/txtRemainingAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:text="0.00"
+                            android:textColor="@color/black"
+                            android:layout_gravity="end"
+                            android:textSize="8sp"
+                            tools:ignore="HardcodedText,SmallSp" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_marginTop="2dp">
+                        <View android:layout_width="match_parent"
+                            android:layout_height=".2dp"
+                            android:background="@color/colorPrimary"
+                            android:layout_weight="1"/>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </com.eot_app.utility.ZoomLayout>
+    </ScrollView>
+</LinearLayout>
+</layout>

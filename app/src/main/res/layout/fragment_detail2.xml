@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f2f7fa">
+
+    <FrameLayout
+        android:id="@+id/frameView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F2F8F9"
+        tools:context="com.eot_app.nav_menu.jobs.job_detail.detail.DetailFragment">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F2F8F9"
+                android:orientation="vertical">
+
+
+                <include layout="@layout/dialogmap" />
+
+                <include layout="@layout/job_details_client_layout" />
+
+                <include layout="@layout/job_details_contact_layout" />
+
+                <include layout="@layout/job_details_schedule" />
+
+
+                <include layout="@layout/job_details_img_des_layout" />
+
+                <include layout="@layout/job_details_instr_lay" />
+
+                <include layout="@layout/job_details_completion_notes" />
+
+                <include layout="@layout/signature_pad" />
+
+
+                <include layout="@layout/job_custom_field_lay" />
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/ll_po_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:elevation="2dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
+                    <!--        android:layout_marginBottom="8dp"
+                    -->
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:id="@+id/text_misc"
+                            style="@style/job_details_headr_style"
+                            android:layout_width="match_parent"
+                            android:text="Misc"
+                            tools:ignore="HardcodedText" />
+
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/textViewPONumber"
+                            style="@style/job_details_child_style"
+                            android:text="PO Number :"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <include layout="@layout/job_details_recur" />
+
+                <include layout="@layout/job_detail_tag_lay" />
+
+                <include layout="@layout/job_details_fw_lay" />
+
+                <include layout="@layout/quotes_num_layout" />
+
+                <include
+                    android:visibility="gone"
+                    android:id="@+id/ll_item"
+                    layout="@layout/item_job_detail" />
+                <include
+                    android:visibility="gone"
+                    android:id="@+id/ll_equipment"
+                    layout="@layout/equipment_job_detail" />
+
+                <!--add Completion mote field-->
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </FrameLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

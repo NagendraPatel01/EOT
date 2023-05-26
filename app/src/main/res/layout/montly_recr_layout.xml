@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <RelativeLayout
+        android:id="@+id/montly_parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/submit_btn"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/recuring_pattenr"
+                style="@style/header_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@color/recyclerview"
+                android:paddingStart="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="Recurring Pattern"
+                tools:ignore="HardcodedText,RtlSymmetry" />
+
+
+            <!--Every Recr Tab start-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_day"
+                        style="@style/style_thrid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:baselineAligned="false"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:text="Every"
+                        tools:ignore="HardcodedText" />
+
+                    <LinearLayout
+                        android:id="@+id/montly_every_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/edittext_shap_qus"
+                        android:orientation="horizontal"
+                        android:padding="2dp">
+
+                        <EditText
+                            android:id="@+id/every_recr_edt"
+                            style="@style/add_recr_radio_style"
+                            android:background="@android:color/transparent"
+                            android:text="1"
+                            tools:ignore="Autofill,HardcodedText,LabelFor" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/recyclerview"
+                            android:gravity="center"
+                            android:id="@+id/every_img_layout"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/every_recr_up_img"
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:src="@drawable/ic_baseline_arrow_drop_up_24"
+                                tools:ignore="ContentDescription" />
+
+                            <ImageView
+                                android:id="@+id/every_recr_down_img"
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:src="@drawable/ic_arrow_drop_down_black_24dp"
+                                tools:ignore="ContentDescription" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/of_every"
+                        style="@style/style_thrid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:baselineAligned="false"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:text="of every"
+                        tools:ignore="HardcodedText" />
+
+                    <LinearLayout
+                        android:id="@+id/montly_every_layout2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/edittext_shap_qus"
+                        android:orientation="horizontal"
+                        android:padding="2dp">
+
+                        <EditText
+                            android:id="@+id/month_edt"
+                            style="@style/add_recr_radio_style"
+                            android:background="@android:color/transparent"
+                            android:text="1"
+                            tools:ignore="Autofill,HardcodedText,LabelFor" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/recyclerview"
+                            android:gravity="center"
+                            android:id="@+id/every_img_layout2"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/month_up_img"
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:src="@drawable/ic_baseline_arrow_drop_up_24"
+                                tools:ignore="ContentDescription" />
+
+                            <ImageView
+                                android:id="@+id/month_down_img"
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:src="@drawable/ic_arrow_drop_down_black_24dp"
+                                tools:ignore="ContentDescription" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/months_txt"
+                        style="@style/style_thrid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:baselineAligned="false"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:text="month(s)"
+                        tools:ignore="HardcodedText" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <!--Every Recr Tab Stop-->
+
+            <!--Strat day/week-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/the_radio"
+                        style="@style/style_thrid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:baselineAligned="false"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:text="The"
+                        tools:ignore="HardcodedText" />
+
+
+                    <!--Day view start-->
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_shap_qus">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout_day"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/button_field_height"
+                            android:background="@drawable/layout_disable"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:clickable="false"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/tv_spinner_day"
+                                style="@style/style_sec_sec"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint=""
+                                tools:ignore="InefficientWeight" />
+
+                            <ImageView
+                                android:id="@+id/imgday"
+                                style="@style/subtext_style"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/ic_drop_down_black"
+                                tools:ignore="ContentDescription" />
+
+                        </LinearLayout>
+
+
+                        <com.eot_app.utility.util_interfaces.NoDefaultSpinner
+                            android:id="@+id/spinnerday"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/linearLayout_day"
+                            android:background="@android:color/transparent"
+                            android:dropDownWidth="match_parent"
+                            android:minHeight="20dp"
+                            android:popupBackground="@drawable/popupbg"
+                            android:visibility="visible" />
+
+                    </RelativeLayout>
+                    <!--day view End-->
+
+
+                    <!--week day view start-->
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_shap_qus">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout_week"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/button_field_height"
+                            android:background="@drawable/layout_disable"
+                            android:gravity="center"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/tv_spinner_week"
+                                style="@style/style_sec_sec"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint=""
+                                tools:ignore="InefficientWeight" />
+
+                            <ImageView
+                                android:id="@+id/imgweek"
+                                style="@style/subtext_style"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/ic_drop_down_black"
+                                tools:ignore="ContentDescription" />
+
+                        </LinearLayout>
+
+
+                        <com.eot_app.utility.util_interfaces.NoDefaultSpinner
+                            android:id="@+id/spinnerweek"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/linearLayout_week"
+                            android:background="@android:color/transparent"
+                            android:dropDownWidth="match_parent"
+                            android:minHeight="20dp"
+                            android:popupBackground="@drawable/popupbg"
+                            android:visibility="visible" />
+
+                    </RelativeLayout>
+
+                    <!--week day view stop-->
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/of_every_day"
+                        style="@style/style_thrid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:baselineAligned="false"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="of every"
+                        tools:ignore="HardcodedText" />
+
+
+                    <LinearLayout
+                        android:id="@+id/months_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/layout_disable"
+                        android:orientation="horizontal"
+                        android:padding="2dp"
+                        >
+
+                        <EditText
+                            android:id="@+id/every_month_edt"
+                            style="@style/add_recr_radio_style"
+                            android:visibility="invisible"
+                            android:background="@android:color/transparent"
+                            android:text="1"
+                            tools:ignore="Autofill,HardcodedText,LabelFor" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/recyclerview"
+                            android:gravity="center"
+                            android:id="@+id/ever_month_the_layout"
+                            android:visibility="invisible"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/every_month_up_img"
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:src="@drawable/ic_baseline_arrow_drop_up_24"
+                                tools:ignore="ContentDescription" />
+
+                            <ImageView
+                                android:id="@+id/every_month_down_img"
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:src="@drawable/ic_arrow_drop_down_black_24dp"
+                                tools:ignore="ContentDescription" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/months_txt_day"
+                        style="@style/style_thrid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:baselineAligned="false"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:text="of every"
+                        tools:ignore="HardcodedText" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!--Stop day/week-->
+
+            <include layout="@layout/common_recr_layout" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/submit_btn"
+        style="@style/style_sec"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_field_height"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/submit_btn"
+        android:gravity="center"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText">
+
+    </Button>
+
+</RelativeLayout>
+</layout>

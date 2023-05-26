@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingEnd="5dp"
+        tools:ignore="RtlSymmetry">
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:padding="5dp"
+            android:id="@+id/iconadd"
+            android:tint="#737d7e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/clientBatch"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="2dp"
+            android:layout_gravity="end"
+            android:background="@drawable/add_bdges_count"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="10+"
+            android:textColor="@color/white"
+            android:textSize="7sp"
+            android:textStyle="normal"
+            android:visibility="gone"
+            tools:ignore="HardcodedText,SmallSp">
+
+        </TextView>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/frmName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true" />
+</LinearLayout>
+</layout>
